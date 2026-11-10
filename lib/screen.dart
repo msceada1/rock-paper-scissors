@@ -52,6 +52,19 @@ class _ScreenState extends State<Screen> {
               setState(() {
                 _image1 = _obtenerRutaImagenAleatoria(rutasImagenes);
                 _image2 = _obtenerRutaImagenAleatoria(rutasImagenes);
+
+                if (_image1 == _image2) {
+                  print(txtganador = 'empate');
+                } else if ((_image1 == rutasImagenes[1] &&
+                        _image2 == rutasImagenes[2]) ||
+                    (_image1 == rutasImagenes[2] &&
+                        _image2 == rutasImagenes[0]) ||
+                    (_image1 == rutasImagenes[0] &&
+                        _image2 == rutasImagenes[1])) {
+                  print(txtganador = 'gana el jugador 1');
+                } else {
+                  print(txtganador = 'gana el jugador 2');
+                }
               });
             },
             style: FilledButton.styleFrom(backgroundColor: Colors.red),
