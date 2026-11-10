@@ -21,8 +21,8 @@ class _ScreenState extends State<Screen> {
     "assets/images/scissors.png",
   ];
 
- // String _image1;
-  //String _image2;
+  String _image1 = _obtenerRutaImagenAleatoria(rutasImagenes);
+  String _image2 = _obtenerRutaImagenAleatoria(rutasImagenes);
   String txtganador = "";
 
   @override
