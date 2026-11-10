@@ -41,7 +41,6 @@ class _ScreenState extends State<Screen> {
             children: [
               Image.asset(_image1, height: 200, width: 200),
               Image.asset(_image2, height: 200, width: 200),
-              
             ],
           ),
 
@@ -77,8 +76,6 @@ class _ScreenState extends State<Screen> {
       ),
     );
   }
-/*
-  String _obtenerRutaImagenAleatoria(List<String> rutas) {
 
   //metodo encargado de generar un numero aleatorio y devolver
   //de una lista de String, el indice que genera el numero aleatorio
@@ -86,6 +83,4 @@ class _ScreenState extends State<Screen> {
     int indice = Random().nextInt(3);
     return rutas[indice];
   }
-
- */
 }
