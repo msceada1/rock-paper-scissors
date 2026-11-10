@@ -45,7 +45,7 @@ class _ScreenState extends State<Screen> {
             ],
           ),
 
-          Text('Player 2 win!!', style: TextStyle(fontSize: 30)),
+          Text(txtganador, style: TextStyle(fontSize: 30)),
 
           FilledButton(
             onPressed: () {
