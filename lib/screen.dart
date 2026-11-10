@@ -67,7 +67,11 @@ class _ScreenState extends State<Screen> {
 /*
   String _obtenerRutaImagenAleatoria(List<String> rutas) {
 
-
+  //metodo encargado de generar un numero aleatorio y devolver
+  //de una lista de String, el indice que genera el numero aleatorio
+  static String _obtenerRutaImagenAleatoria(List<String> rutas) {
+    int indice = Random().nextInt(3);
+    return rutas[indice];
   }
 
  */
