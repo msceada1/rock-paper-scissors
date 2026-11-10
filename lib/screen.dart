@@ -39,8 +39,9 @@ class _ScreenState extends State<Screen> {
           Row(
             mainAxisAlignment: .spaceEvenly,
             children: [
-              Image.asset('assets/images/paper.png', height: 200, width: 200),
-              Image.asset('assets/images/paper.png', height: 200, width: 200),
+              Image.asset(_image1, height: 200, width: 200),
+              Image.asset(_image2, height: 200, width: 200),
+              
             ],
           ),
 
