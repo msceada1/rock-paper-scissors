@@ -48,7 +48,12 @@ class _ScreenState extends State<Screen> {
           Text('Player 2 win!!', style: TextStyle(fontSize: 30)),
 
           FilledButton(
-            onPressed: () {},
+            onPressed: () {
+              setState(() {
+                _image1 = _obtenerRutaImagenAleatoria(rutasImagenes);
+                _image2 = _obtenerRutaImagenAleatoria(rutasImagenes);
+              });
+            },
             style: FilledButton.styleFrom(backgroundColor: Colors.red),
             child: Text(
               'GO!!',
