@@ -15,7 +15,7 @@ class Screen extends StatefulWidget {
 }
 
 class _ScreenState extends State<Screen> {
-  final List<String> rutasImagenes = [
+  static final List<String> rutasImagenes = [
     "assets/images/paper.png",
     "assets/images/rock.png",
     "assets/images/scissors.png",
